@@ -3,6 +3,5 @@ docker rm -f superduty-dave
 docker run -d \
            --name=superduty-dave \
            --restart=always \
-           -p 80:80 \
-           --volume=/var/warehouse/superduty-dave:/data \
+           -p 8087:8080 \
            superduty-dave
